@@ -1,10 +1,11 @@
-function Atividade1() {
-    return (
+import styles from './index.module.css';
+
+export default function Atividade01 () {
+    return(
         <>
-            <h1>Atividade 1</h1>
-            <p>Conteúdo mínimo para componente React</p>
+            <h1 className={styles.titulo}>Atividade 1</h1>
+            
+            <p>Componente mínimo</p>
         </>
     )
 }
-
-export default Atividade1;
