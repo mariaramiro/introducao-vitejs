@@ -1,26 +1,28 @@
 import { useState } from 'react';
-
-import Botao from './botao';
-
+import Botao from './Botao';
 import styles from './index.module.css';
 
-function Atividade03() {
-    // O hook useState gerencia o valor do contador
-    const [contador, setContador] = useState(0);
+function Atividade3 () {
+    const [acao, setAcao] = useState('');
 
-    const incrementar = () => setContador(contador + 1);
-    const decrementar = () => setContador(contador - 1);
+    const Cadastrar = () => setAcao('Cadastrar');
+    const Editar = () => setAcao('Editar');
+    const Listar = () => setAcao('Listar');
+    const Excluir = () => setAcao('Excluir');
+    const Cancelar = () => setAcao('Cancelar');
 
     return (
         <div className={styles.container}>
             <h1>Exemplo 4 - Uso de componentes</h1>
-            <h2>O valor atual é: {contador}</h2>
+            <h2>Ação Selecionada: {acao}</h2>
 
-            {/* Passando funções e textos via Props para o componente Botao */}
-            <Botao texto="Diminuir -" aoClicar={decrementar} acao={'-'} />
-            <Botao texto="Aumentar +" aoClicar={incrementar} acao={'+'} />
+            <Botao texto="Cadastrar" aoClicar={Cadastrar} classe="cadastrar" />
+            <Botao texto="Editar" aoClicar={Editar} classe="editar" />
+            <Botao texto="Listar" aoClicar={Listar} classe="listar" />
+            <Botao texto="Excluir" aoClicar={Excluir} classe="excluir" />
+            <Botao texto="Cancelar" aoClicar={Cancelar} classe="cancelar" />
         </div>
     );
 }
 
-export default Atividade03;
+export default Atividade3;

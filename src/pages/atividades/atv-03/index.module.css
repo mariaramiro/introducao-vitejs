@@ -1,6 +1,28 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 5rem;
+.botao {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    border: none;
+    color: white;
+}
+
+/* Cores individuais */
+.cadastrar {
+    background-color: green;
+}
+
+.editar {
+    background-color: blue;
+}
+
+.listar {
+    background-color: orange;
+}
+
+.excluir {
+    background-color: red;
+}
+
+.cancelar {
+    background-color: gray;
 }
