@@ -12,7 +12,8 @@ import { Link } from "react-router";
             <Link to="/exemplo/1">Exemplo 1 - Componente básico</Link>
             <Link to="/exemplo/2">Exemplo 2 - Uso de module CSS</Link> 
             <Link to="/exemplo/3">Exemplo 3</Link>  
-            <Link to="/exemplo/4">Exemplo 4</Link>  
+            <Link to="/exemplo/4">Exemplo 4</Link>
+             <Link to="/exemplo/5">Exemplo 5</Link>    
                
           </div>
           
@@ -20,7 +21,8 @@ import { Link } from "react-router";
              <h2>Atividades</h2>     
               <Link to="/atividade/1">Atividade 1 - Uso de CSS</Link>    
               <Link to="/atividade/2">Atividade 2 - Uso de CSS</Link>    
-              <Link to="/atividade/3">Atividade 3 - Uso de CSS</Link>    
+              <Link to="/atividade/3">Atividade 3 - Uso de CSS</Link>   
+              <Link to="/atividade/4">Atividade 4 - Uso de CSS</Link>  
           </div>
       </div>
     )
