@@ -29,15 +29,6 @@ export default function Atividade04() {
             <h1>Lista de Compras</h1>
 
             <form onSubmit={handleSubmit} className={styles.formulario}>
-                
-                <input
-                    type="text"
-                    placeholder='Nome do produto'
-                    value={produto}
-                    onChange={e => setProduto(e.target.value)}
-                    className={styles.produto}
-                />
-
                 <input
                     type="number"
                     placeholder='Qtd'
@@ -46,7 +37,18 @@ export default function Atividade04() {
                     className={styles.quantidade}
                 />
 
-                <button type="submit">Adicionar</button>
+                <input
+                    type="text"
+                    placeholder='Nome do produto'
+                    value={produto}
+                    onChange={e => setProduto(e.target.value)}
+                    className={styles.produto}
+                />
+
+                
+                <button 
+                className={styles.button}
+                type="submit">Adicionar</button>
             </form>
 
             <h2>Lista</h2>

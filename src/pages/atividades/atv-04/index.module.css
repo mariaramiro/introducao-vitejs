@@ -23,9 +23,9 @@
   padding: 8px;
 }
 
-button {
-  background: #5a63f1;
-  color: white;
+.button {
+  background: #ff1e00;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 8px 12px;
   border-radius: 5px;

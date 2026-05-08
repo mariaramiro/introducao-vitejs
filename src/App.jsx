@@ -12,7 +12,7 @@ import Exemplo05 from './pages/exemplos/ex-05';
 import Atividade1 from './pages/atividades/atv-01';
 import Atividade2 from './pages/atividades/atv-02';
 import Atividade03 from './pages/atividades/atv-03';
-
+import Atividade04 from './pages/atividades/atv-04';
 function App() {
   return (
     <Routes>
@@ -22,7 +22,7 @@ function App() {
       <Route path="/exemplo/2" element={<Exemplo02 />} />
       <Route path="/exemplo/3" element={<Exemplo03 />} />
       <Route path="/exemplo/4" element={<Exemplo04 />} />
-       <Route path="/exemplo/5" element={<Exemplo05 />} />
+      <Route path="/exemplo/5" element={<Exemplo05 />} />
 
 
       <Route path="/atividade/1" element={<Atividade1 />} />
